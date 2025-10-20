@@ -9,7 +9,7 @@ public class Room {
 
     public Room(int numberOfBeds){
         this.numberOfBeds = numberOfBeds;
-        this.price =120.00;
+        this.price = 120.00;
         this.isOccupied = false;
         this.isDirty = false;
     }
