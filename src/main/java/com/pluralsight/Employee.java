@@ -41,6 +41,14 @@ public class Employee {
         return (hoursWorked > 40) ? hoursWorked - 40 : 0;
     }
 
+    public void punchIn(double time){
+
+    }
+
+    public void punchOut(double time){
+
+    }
+
     @Override
     public String toString(){
         return "Employees{" +
@@ -49,5 +57,9 @@ public class Employee {
                 ", department = " + department + '\'' +
                 ", payRate = " + payRate +
                 ", hoursWorked = " + hoursWorked +
+                ", getTotalPay()=" + getTotalPay() +
+                ". getRegularHours()=" + getRegularHours() +
+                ", getOvertimeHours()=" + getOvertimeHours() +
+                '}';
     }
 }
