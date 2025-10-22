@@ -30,27 +30,29 @@ public class Room {
         return isDirty;
     }
 
-    public boolean isAvailable() {
-        return !(isOccupied && isDirty);
+    public boolean isAvailable(){
+        return (!isOccupied && !isDirty);
     }
+
 
     public void checkIn(){
         this.isDirty = true;
         this.isOccupied = true;
     }
 
-    public void checkOut(){
+    public void checkout(){
         this.isOccupied = false;
     }
 
     public void cleanRoom(){
-        if(!isOccupied){
+        if(!isOccupied ){
             this.isDirty = false;
         }
     }
 
+
     @Override
-    public String toString (){
+    public String toString() {
         return "Room{" +
                 "numberOfBeds = " + numberOfBeds +
                 ", price = " + price +
@@ -59,4 +61,6 @@ public class Room {
                 ", isAvailable = " + isAvailable() +
                 "}";
     }
+
+
 }
